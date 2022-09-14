@@ -2,6 +2,7 @@
 
 """Write a class Square that defines a square by: (based on 3-square.py) """
 
+
 class Square:
     """Represents a square.
     Private instance attribute: size:
