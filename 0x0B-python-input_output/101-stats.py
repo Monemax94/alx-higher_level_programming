@@ -3,8 +3,8 @@
 """
 File: 101-stats.py
 Desc: This module reads stdin line by line and computes metrics
-Author: Gizachew Bayness (Elec Crazy)
-Date Created: Aug 2 2022
+Author: Monday Odoh (Monemax)
+Date Created: Sep 27 2022
 """
 
 
