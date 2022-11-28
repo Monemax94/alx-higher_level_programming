@@ -1,7 +1,5 @@
 #!/usr/bin/node
-// This is a script that prints a message depending
-// on the number of argument passed
-
+// This is a script that prints argument passed.
 if (process.argv.length === 2) {
   console.log('No argument');
 } else if (process.argv.length === 3) {
