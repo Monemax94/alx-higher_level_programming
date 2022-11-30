@@ -1,4 +1,7 @@
 #!/usr/bin/node
+
+// Class Rectangle that defines a rectangle with 3 instance methods:
+
 class Rectangle {
   constructor (w, h) {
     if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {

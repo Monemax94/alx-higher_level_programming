@@ -1,4 +1,9 @@
 #!/usr/bin/node
+
+// Rectangle class that defines a rectangle with 
+// an instance methode called print() that prints
+// the rectagle using the character X:
+
 class Rectangle {
   constructor (w, h) {
     if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
