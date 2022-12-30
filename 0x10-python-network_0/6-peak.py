@@ -1,18 +1,24 @@
 #!/usr/bin/python3
-"""
-This script contain 1 function find_peak and finds a peak in a list of unsorted integers
-"""
+# finds a peak in a list of unsorted integers.
 
-def find_peak(List:list) -> int:
+
+def find_peak(list_of_integers):
+    """Find a peak in a list of unsorted integers
     """
-    Argument:
-        List:list - contains the list 
-    Return:n - return the peak of the list
-    """
-    n = len(List)
-    if n == 0:
+    if list_of_integers is None or len(list_of_integers) == 0:
         return None
-    elif n == 1:
-        return List[0]
-    elif ()
-print(find_peak([2]))
+
+    size = len(list_of_integers)
+    if size == 1:
+        return list_of_integers[0]
+    elif size == 2:
+        return max(list_of_integers)
+
+    mid = int(size / 2)
+    peak = list_of_integers[mid]
+    if peak > list_of_integers[mid - 1] and peak > list_of_integers[mid + 1]:
+        return peak
+    elif peak < list_of_integers[mid - 1]:
+        return find_peak(list_of_integers[:mid])
+    else:
+        return find_peak(list_of_integers[mid + 1:])
